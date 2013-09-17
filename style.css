@@ -1,0 +1,57 @@
+.itv_wp_tooltip_link,
+.itv_wp_add {
+	display:inline-block;
+	background-color:#999;
+	color:#fff;
+	font-size:.75em;
+	vertical-align:middle;
+	padding:0px 6px;
+	border-radius:100%;
+	transition: background-color .2s;
+	float:right;
+	margin:0 0 0 5px;
+}
+.itv_wp_tooltip_link:hover,
+.itv_wp_add:hover {
+	background-color:#222;
+	color:#fff;
+	cursor:pointer;
+}
+.itv_wp_tooltip {
+	display:none;
+	color:#fff;
+	background-color:#999;
+	padding:10px;
+	max-width:175px;
+	font-size:.85em;
+	border-radius:3px;
+	border-bottom:3px solid #888;
+	position:absolute;
+	top:0px;
+	right:30px;
+	z-index:100;
+}
+.itv_wp_tooltip:before {
+	content:' ';
+	display:inline-block;
+	border-left:10px solid #999;
+	border-top:7px solid transparent;
+	border-bottom:7px solid transparent;
+	position:absolute;
+	top:3px;
+	right:-8px;
+}
+.itv_wp_tooltip_link:hover ~ .itv_wp_tooltip {
+	display:inline-block;
+}
+.itv_wp_add {
+	font-weight:bold;
+}
+.itv_wp_forms input,
+.itv_wp_forms textarea {
+	width:100%;
+}
+.itv_wp_row {
+	margin:0 0 10px 0;
+	position:relative;
+}
